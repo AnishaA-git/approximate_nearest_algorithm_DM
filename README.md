@@ -17,3 +17,16 @@ Tree-based algorithms are one of the most common strategies when it comes to ANN
 
 # Hierarchical Navigable Small World Graphs (HNSW)
 HNSW helps to tune the parameters to change the accuracy/speed tradeoff. Supports batch queries. The NSW algorithm has polylogarithmic time complexity and can outperform rival algorithms on many real-world datasets.
+
+# Dataset
+Fetch a dataset from the StackExchange network.
+The datasets contain users answering questions: an interaction is defined as a user answering a given question.
+
+The following datasets from the StackExchange network are available:
+1. CrossValidated: From stats.stackexchange.com. Approximately 9000 users, 72000 questions, and 70000 answers.
+2. StackOverflow: From stackoverflow.stackexchange.com. Approximately 1.3M users, 11M questions, and 18M answers.
+
+I tried using both but the StackOverflow dataset is huge and thus takes a lot of time for further computation and processing.
+
+## Reference
+1. https://making.lyst.com/lightfm/docs/datasets.html
